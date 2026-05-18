@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeffrey | Web Developer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero fade-in">
+  <div class="hero-content">
+
+    <h1>Jeffrey Jacob</h1>
+
+    <h2>Web Designer • JavaScript Developer • Python App Builder</h2>
+
+    <p>
+      I design modern websites and build applications that help businesses grow and get more customers online.
+    </p>
+
+    <div class="buttons">
+      <a href="#projects" class="btn">View Proof</a>
+      <a href="#contact" class="btn btn-outline">Hire Me</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section fade-in">
+  <h2>Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Business Websites</h3>
+      <p>Professional websites that help businesses attract customers online.</p>
+    </div>
+
+    <div class="card">
+      <h3>Web Applications</h3>
+      <p>Interactive websites built with JavaScript.</p>
+    </div>
+
+    <div class="card">
+      <h3>Python Tools</h3>
+      <p>Automation tools and backend apps using Python.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY ME -->
+<section class="section fade-in">
+  <h2>Why Work With Me</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Fast Delivery</h3>
+      <p>I deliver clean and professional websites quickly.</p>
+    </div>
+
+    <div class="card">
+      <h3>Mobile Friendly</h3>
+      <p>All websites work perfectly on phones and desktops.</p>
+    </div>
+
+    <div class="card">
+      <h3>Modern Design</h3>
+      <p>Clean UI that builds trust and attracts customers.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROOF OF WORK -->
+<section id="projects" class="section fade-in">
+  <h2>Proof of Work</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/web-design.png" class="project-img" alt="Web Design">
+      <h3>Web Design</h3>
+      <p>Modern business website UI design.</p>
+      <span class="tag">UI / UX</span>
+    </div>
+
+    <div class="card">
+      <img src="images/business.png" class="project-img" alt="Business Website">
+      <h3>Business Websites</h3>
+      <p>Websites that help companies attract customers.</p>
+      <span class="tag">Client Focus</span>
+    </div>
+
+    <div class="card">
+      <img src="images/mobile-app.png" class="project-img" alt="Mobile App">
+      <h3>Mobile Apps</h3>
+      <p>App UI design and mobile-friendly layouts.</p>
+      <span class="tag">App Design</span>
+    </div>
+
+    <div class="card">
+      <img src="images/coding.png" class="project-img" alt="Coding">
+      <h3>Development</h3>
+      <p>JavaScript and Python-based solutions.</p>
+      <span class="tag">Programming</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section fade-in">
+  <h2>Let’s Work Together</h2>
+
+  <p class="highlight">Available for freelance work • Fast response ⚡</p>
+
+  <div class="contact-box">
+
+    <a class="btn"
+       href="https://wa.me/2348107291290"
+       target="_blank">
+       💬 WhatsApp Me
+    </a>
+
+    <a class="btn btn-outline"
+       href="mailto:jeffreyjacobb215@gmail.com">
+       📧 Email Me
+    </a>
+
+  </div>
+
+  <p style="margin-top:15px; color:#94a3b8;">
+    I can start your project immediately.
+  </p>
+</section>
+
+<!-- FLOAT BUTTON -->
+<a class="float-btn" href="https://wa.me/2348107291290" target="_blank">
+  WhatsApp
+</a>
+
+<!-- ANIMATION -->
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+elements.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>

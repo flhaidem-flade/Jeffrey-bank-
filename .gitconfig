@@ -1,6 +1,6 @@
 [user]
-	name = JeffreyBank
-	email = jeffrey@bank.com
+	name = Jeffrey
+	email = your@email.com
 [credential "https://github.com"]
 	helper = 
 	helper = !/data/data/com.termux/files/usr/bin/gh auth git-credential
